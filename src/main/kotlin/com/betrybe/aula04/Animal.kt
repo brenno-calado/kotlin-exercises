@@ -1,4 +1,4 @@
-package com.betrybe.aula4
+package com.betrybe.aula04
 
 interface Animal {
     val birthStamp: Long

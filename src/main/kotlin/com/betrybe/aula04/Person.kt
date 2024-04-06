@@ -1,4 +1,4 @@
-package com.betrybe.aula4
+package com.betrybe.aula04
 
 import java.util.Date
 import kotlin.math.absoluteValue
@@ -35,7 +35,7 @@ class Person(override val name: String): Human() {
         set(value) {
             println(value)
         }
-    
+
 }
 
 fun main() {

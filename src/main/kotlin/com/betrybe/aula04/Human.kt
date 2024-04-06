@@ -1,4 +1,4 @@
-package com.betrybe.aula4
+package com.betrybe.aula04
 
 abstract class Human: Animal {
     override val scientificName: String
