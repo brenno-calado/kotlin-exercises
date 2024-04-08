@@ -3,12 +3,7 @@ package com.betrybe.aula04
 import java.util.Date
 import kotlin.math.absoluteValue
 
-class Person(override val name: String): Human() {
-    private val timestamp: Long = Date().time
-
-    override val birthStamp: Long
-        get() = this.timestamp
-
+data class Person(override val name: String, override val birthStamp: Long = Date().time, override val birthPosition: Position): Human() {
     override var height: Double = 0.3 + (Math.random() * 0.3)
         get() {
             println("$name's height is $field meters")
@@ -36,10 +31,4 @@ class Person(override val name: String): Human() {
             println(value)
         }
 
-}
-
-fun main() {
-    val person = Person("Suzumiya")
-    person.height
-    person.height = 1.5
 }
